@@ -1,5 +1,6 @@
-package org.example.Kafka;
+package org.example.Service.Kafka;
 
+import org.example.Rest.Controller.CalculatorController;
 import org.example.Service.CalculatorService;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
@@ -14,16 +15,16 @@ public class KafkaConsumer {
     public KafkaConsumer(CalculatorService calculatorService) {
         this.calculatorService = calculatorService;
     }
-
     @KafkaListener(topics = "${kafka.topic.request}", groupId = "${spring.kafka.consumer.group-id}")
     public void consume(String message) {
         System.out.println("Received message: " + message);
 
         try {
             String[] parts = message.split(" ");
-            String operation = parts[0];
-            BigDecimal a = new BigDecimal(parts[1]);
-            BigDecimal b = new BigDecimal(parts[2]);
+            String requestId = parts[0]; // Extrai o ID da mensagem
+            String operation = parts[1];
+            BigDecimal a = new BigDecimal(parts[2]);
+            BigDecimal b = new BigDecimal(parts[3]);
 
             BigDecimal result;
             switch (operation.toUpperCase()) {
@@ -44,6 +45,8 @@ public class KafkaConsumer {
             }
 
             System.out.println("Calculation result: " + result);
+
+            CalculatorController.completeResponse(requestId, result);
 
         } catch (Exception e) {
             System.err.println("Error processing message: " + e.getMessage());
