@@ -4,6 +4,8 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
+import java.math.BigDecimal;
+
 @Service
 public class KafkaProducer {
 
@@ -16,8 +18,10 @@ public class KafkaProducer {
         this.kafkaTemplate = kafkaTemplate;
     }
 
-    public void sendMessage(String message) {
+    public void sendMessage(String requestId, String operation, BigDecimal a, BigDecimal b) {
+        String message = requestId + " " + operation.toUpperCase() + " " + a + " " + b;
         kafkaTemplate.send(requestTopic, message);
         System.out.println("Message sent to Kafka: " + message);
     }
+
 }

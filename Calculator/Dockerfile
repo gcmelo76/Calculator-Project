@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copiar o JAR gerado para o container
-COPY target/calculator-*.jar app.jar
+COPY target/calculator-1.0.0.jar app.jar
 
 # Comando para rodar a aplicação
 CMD ["java", "-jar", "app.jar"]
