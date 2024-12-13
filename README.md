@@ -1,3 +1,4 @@
+# README.md
 # Calculator API Project
 
 A RESTful calculator API with two microservices (REST and Calculator) communicating via Apache Kafka.
@@ -28,9 +29,15 @@ docker-compose up --build
 
 The services will be available after Kafka and the applications are fully initialized.
 
-## API Endpoints
+## API Documentation
 
-All endpoints accept GET requests with query parameters `a` and `b` as decimal numbers.
+For detailed API documentation, see [docs/api-documentation.md](docs/api-documentation.md).
+
+The Swagger UI is available at: `http://localhost:8084/swagger-ui/index.html`
+
+## Quick API Reference
+
+All endpoints accept POST requests with query parameters `a` and `b` as decimal numbers.
 
 - Addition: `http://localhost:8084/api/calculator/add?a=10&b=5`
 - Subtraction: `http://localhost:8084/api/calculator/subtract?a=10&b=5`
@@ -48,6 +55,7 @@ Example response:
 
 - `Rest/`: REST API service (port 8084)
 - `Calculator/`: Calculation service (port 8083)
+- `docs/`: API documentation
 - Both services communicate through Kafka topics
 
 ## Troubleshooting
@@ -64,3 +72,4 @@ If you encounter any issues:
 - Apache Kafka
 - Docker
 - Maven
+- OpenAPI (Swagger)
