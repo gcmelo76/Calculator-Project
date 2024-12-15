@@ -10,7 +10,8 @@ services:
       - ALLOW_ANONYMOUS_LOGIN=yes
     volumes:
       - zookeeper-data:/bitnami/zookeeper
-
+    networks:
+      - loki-network
   kafka:
     image: bitnami/kafka:3.6.1
     container_name: witproject-kafka
@@ -26,6 +27,8 @@ services:
       - kafka-data:/bitnami/kafka
     depends_on:
       - zookeeper
+    networks:
+      - loki-network
 
   calculator:
     build:
@@ -40,6 +43,8 @@ services:
       - MANAGEMENT_SERVER_PORT=8081
     depends_on:
       - kafka
+    networks:
+      - loki-network
 
   rest:
     build:
@@ -54,6 +59,8 @@ services:
       - MANAGEMENT_SERVER_PORT=8081
     depends_on:
       - kafka
+    networks:
+      - loki-network
 
   prometheus:
     image: prom/prometheus:v2.45.0
@@ -68,16 +75,18 @@ services:
       - '--storage.tsdb.path=/prometheus'
     depends_on:
       - rest
+    networks:
+      - loki-network
 
   loki:
     image: grafana/loki:2.9.3
     container_name: witproject-loki
-    command: "-config.file=/etc/loki/config.yaml"
     ports:
       - "3100:3100"
     volumes:
       - ./config/loki-config.yaml:/etc/loki/config.yaml
-      - loki-data:/loki
+    networks:
+      - loki-network
 
   grafana:
     image: grafana/grafana:10.2.3
@@ -92,6 +101,8 @@ services:
     depends_on:
       - prometheus
       - loki
+    networks:
+      - loki-network
 
 volumes:
   zookeeper-data:
@@ -99,3 +110,7 @@ volumes:
   prometheus-data:
   grafana-data:
   loki-data:
+
+networks:
+    loki-network:
+      driver: bridge

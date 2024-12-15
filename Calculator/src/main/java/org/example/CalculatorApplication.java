@@ -1,16 +1,14 @@
 package org.example;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.example.Service.CalculatorService;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
-
-import java.math.BigDecimal;
 
 @SpringBootApplication(scanBasePackages = "org.example")
 public class CalculatorApplication {
-
+    private static final Logger logger = LoggerFactory.getLogger(CalculatorApplication.class);
     private final CalculatorService calculatorService;
 
     public CalculatorApplication(CalculatorService calculatorService) {
@@ -18,7 +16,10 @@ public class CalculatorApplication {
     }
 
     public static void main(String[] args) {
-        System.out.println("URL Kafka: " + System.getProperty("spring.kafka.bootstrap-servers"));
+        String kafkaUrl = System.getProperty("spring.kafka.bootstrap-servers");
+        logger.info("Starting Calculator microservice");
+        logger.info("Kafka URL: {}", kafkaUrl);
         SpringApplication.run(CalculatorApplication.class, args);
+        logger.info("Calculator microservice started successfully");
     }
 }

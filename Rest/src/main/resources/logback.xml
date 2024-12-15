@@ -12,13 +12,15 @@
         </http>
         <format>
             <label>
-                <pattern>container=${HOSTNAME}</pattern>
+                <pattern>service=${HOSTNAME},component=%logger{0}</pattern>
             </label>
             <message>
-                <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+                <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level - %msg%n</pattern>
             </message>
         </format>
     </appender>
+
+    <logger name="org.example" level="INFO"/>
 
     <root level="INFO">
         <appender-ref ref="CONSOLE"/>
