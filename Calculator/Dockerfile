@@ -8,4 +8,5 @@ WORKDIR /app
 COPY target/calculator-1.0.0.jar app.jar
 
 # Comando para rodar a aplicação
-CMD ["java", "-jar", "app.jar"]
+CMD ["java", "-Djava.util.logging.manager=org.apache.logging.log4j.jul.LogManager", "-jar", "app.jar"]
+
