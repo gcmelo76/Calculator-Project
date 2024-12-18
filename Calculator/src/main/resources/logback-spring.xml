@@ -1,12 +1,46 @@
 <configuration>
-    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
-        <file>/var/log/calculator/application.log</file>
+    <!-- Define App Name as Property -->
+    <property name="APP_NAME" value="REST-APP" />
+
+    <!-- Console Appender (Optional) -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
-            <pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n</pattern>
+            <pattern>
+                {"timestamp":"%d{yyyy-MM-dd'T'HH:mm:ss.SSSZ}",
+                "level":"%p",
+                "App_name":"${APP_NAME}",
+                "request_id":"%X{request_id}",
+                "logger":"%logger{36}",
+                "message":"%msg",
+                "exception":"%replace(%xException){'\n','\\n'}"}
+            </pattern>
         </encoder>
     </appender>
 
+    <!-- File Appender (Main Output for Logs) -->
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logs/app.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- Daily rolling logs -->
+            <fileNamePattern>logs/app-%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>
+                {"timestamp":"%d{yyyy-MM-dd'T'HH:mm:ss.SSSZ}",
+                "level":"%p",
+                "App_name":"${APP_NAME}",
+                "request_id":"%X{request_id}",
+                "logger":"%logger{36}",
+                "message":"%msg",
+                "exception":"%replace(%xException){'\n','\\n'}"}
+            </pattern>
+        </encoder>
+    </appender>
+
+    <!-- Root Logger Configuration -->
     <root level="INFO">
+        <appender-ref ref="CONSOLE" />
         <appender-ref ref="FILE" />
     </root>
 </configuration>
