@@ -37,9 +37,7 @@ services:
       - witproject-network
 
   calculator:
-    build:
-      context: ./Calculator
-      dockerfile: Dockerfile
+    image: gcmelo76/calculator:latest
     container_name: witproject-calculator
     ports:
       - "8083:8080"
@@ -58,9 +56,7 @@ services:
       - witproject-network
 
   rest:
-    build:
-      context: ./Rest
-      dockerfile: Dockerfile
+    image: gcmelo76/rest:latest
     container_name: witproject-rest
     ports:
       - "8084:8080"
