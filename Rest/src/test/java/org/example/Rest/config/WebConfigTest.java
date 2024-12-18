@@ -8,15 +8,12 @@ class WebConfigTest {
 
     @Test
     void addCorsMappings_ShouldConfigureCorrectly() {
-        // Arrange
         WebConfig webConfig = new WebConfig();
         CorsRegistry registry = mock(CorsRegistry.class);
         when(registry.addMapping(anyString())).thenReturn(new CorsRegistry().addMapping("/**"));
 
-        // Act
-        webConfig.addCorsMappings(registry);
 
-        // Assert
+        webConfig.addCorsMappings(registry);
         verify(registry).addMapping("/**");
     }
 }

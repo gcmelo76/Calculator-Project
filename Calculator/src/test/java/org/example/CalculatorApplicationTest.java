@@ -34,6 +34,5 @@ public class CalculatorApplicationTest {
 
     @Test
     void contextLoads() {
-        // Verifica se o contexto carrega corretamente
     }
 }

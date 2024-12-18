@@ -42,56 +42,44 @@ class KafkaConsumerTest {
 
     @Test
     void consume_WithValidAddMessage_ShouldProcessAndSendResponse() {
-        // Arrange
         String message = "request123 ADD 10 5";
         when(calculatorService.add(any(), any())).thenReturn(new BigDecimal("15"));
 
-        // Act
         kafkaConsumer.consume(message);
 
-        // Assert
         verify(calculatorService).add(new BigDecimal("10"), new BigDecimal("5"));
         verify(kafkaTemplate).send(eq("response-topic"), eq("request123 15"));
     }
 
     @Test
     void consume_WithValidSubtractMessage_ShouldProcessAndSendResponse() {
-        // Arrange
         String message = "request123 SUBTRACT 10 5";
         when(calculatorService.subtract(any(), any())).thenReturn(new BigDecimal("5"));
 
-        // Act
         kafkaConsumer.consume(message);
 
-        // Assert
         verify(calculatorService).subtract(new BigDecimal("10"), new BigDecimal("5"));
         verify(kafkaTemplate).send(eq("response-topic"), eq("request123 5"));
     }
 
     @Test
     void consume_WithValidMultiplyMessage_ShouldProcessAndSendResponse() {
-        // Arrange
         String message = "request123 MULTIPLY 10 5";
         when(calculatorService.multiply(any(), any())).thenReturn(new BigDecimal("50"));
 
-        // Act
         kafkaConsumer.consume(message);
 
-        // Assert
         verify(calculatorService).multiply(new BigDecimal("10"), new BigDecimal("5"));
         verify(kafkaTemplate).send(eq("response-topic"), eq("request123 50"));
     }
 
     @Test
     void consume_WithValidDivideMessage_ShouldProcessAndSendResponse() {
-        // Arrange
         String message = "request123 DIVIDE 10 5";
         when(calculatorService.divide(any(), any())).thenReturn(new BigDecimal("2"));
 
-        // Act
         kafkaConsumer.consume(message);
 
-        // Assert
         verify(calculatorService).divide(new BigDecimal("10"), new BigDecimal("5"));
         verify(kafkaTemplate).send(eq("response-topic"), eq("request123 2"));
     }

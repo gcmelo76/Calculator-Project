@@ -1,11 +1,13 @@
-# Usar uma imagem base do OpenJDK
-FROM openjdk:17-jdk-slim
+FROM maven:3.9.7-eclipse-temurin-21-alpine AS builder
 
-# Configurar o diretório de trabalho no container
-WORKDIR /app
+WORKDIR /home/app
+ADD . /home/app/Rest
+RUN cd Rest && mvn clean package
 
-# Copiar o JAR gerado para o container
-COPY target/rest-1.0.0.jar app.jar
 
-# Comando para rodar a aplicação
-CMD ["java", "-jar", "app.jar"]
+FROM eclipse-temurin:21-jre-alpine
+
+WORKDIR /home/app
+EXPOSE 8080
+COPY --from=builder /home/app/Rest/target/*.jar rest-1.0.0.jar
+ENTRYPOINT ["java", "-jar", "rest-1.0.0.jar"]

@@ -1,0 +1,940 @@
+{"timestamp":"2024-12-18T00:04:53.701+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"org.example.Rest.RestApplication",
+                "message":"Starting RestApplication using Java 23.0.1 with PID 28572 (/Users/guilhermemelo/IdeaProjects/Wit_Sem_Erros/Rest/target/classes started by guilhermemelo in /Users/guilhermemelo/IdeaProjects/Wit_Sem_Erros)",
+                "exception":""}{"timestamp":"2024-12-18T00:04:53.702+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"org.example.Rest.RestApplication",
+                "message":"No active profile set, falling back to 1 default profile: "default"",
+                "exception":""}{"timestamp":"2024-12-18T00:04:54.210+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.s.b.w.e.tomcat.TomcatWebServer",
+                "message":"Tomcat initialized with port(s): 8080 (http)",
+                "exception":""}{"timestamp":"2024-12-18T00:04:54.220+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.coyote.http11.Http11NioProtocol",
+                "message":"Initializing ProtocolHandler ["http-nio-8080"]",
+                "exception":""}{"timestamp":"2024-12-18T00:04:54.221+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.catalina.core.StandardService",
+                "message":"Starting service [Tomcat]",
+                "exception":""}{"timestamp":"2024-12-18T00:04:54.221+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.catalina.core.StandardEngine",
+                "message":"Starting Servlet engine: [Apache Tomcat/10.1.1]",
+                "exception":""}{"timestamp":"2024-12-18T00:04:54.258+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.c.c.C.[Tomcat].[localhost].[/]",
+                "message":"Initializing Spring embedded WebApplicationContext",
+                "exception":""}{"timestamp":"2024-12-18T00:04:54.259+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.s.b.w.s.c.ServletWebServerApplicationContext",
+                "message":"Root WebApplicationContext: initialization completed in 535 ms",
+                "exception":""}{"timestamp":"2024-12-18T00:04:54.327+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.e.R.C.CalculatorController",
+                "message":"CalculatorController initialized!",
+                "exception":""}{"timestamp":"2024-12-18T00:04:54.612+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.coyote.http11.Http11NioProtocol",
+                "message":"Starting ProtocolHandler ["http-nio-8080"]",
+                "exception":""}{"timestamp":"2024-12-18T00:04:54.617+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.s.b.w.e.tomcat.TomcatWebServer",
+                "message":"Tomcat started on port(s): 8080 (http) with context path ''",
+                "exception":""}{"timestamp":"2024-12-18T00:04:54.640+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.s.b.w.e.tomcat.TomcatWebServer",
+                "message":"Tomcat initialized with port(s): 8081 (http)",
+                "exception":""}{"timestamp":"2024-12-18T00:04:54.641+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.coyote.http11.Http11NioProtocol",
+                "message":"Initializing ProtocolHandler ["http-nio-8081"]",
+                "exception":""}{"timestamp":"2024-12-18T00:04:54.641+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.catalina.core.StandardService",
+                "message":"Starting service [Tomcat]",
+                "exception":""}{"timestamp":"2024-12-18T00:04:54.641+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.catalina.core.StandardEngine",
+                "message":"Starting Servlet engine: [Apache Tomcat/10.1.1]",
+                "exception":""}{"timestamp":"2024-12-18T00:04:54.645+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.c.c.C.[Tomcat-1].[localhost].[/]",
+                "message":"Initializing Spring embedded WebApplicationContext",
+                "exception":""}{"timestamp":"2024-12-18T00:04:54.645+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.s.b.w.s.c.ServletWebServerApplicationContext",
+                "message":"Root WebApplicationContext: initialization completed in 26 ms",
+                "exception":""}{"timestamp":"2024-12-18T00:04:54.650+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.s.b.a.e.web.EndpointLinksResolver",
+                "message":"Exposing 14 endpoint(s) beneath base path '/actuator'",
+                "exception":""}{"timestamp":"2024-12-18T00:04:54.662+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.coyote.http11.Http11NioProtocol",
+                "message":"Starting ProtocolHandler ["http-nio-8081"]",
+                "exception":""}{"timestamp":"2024-12-18T00:04:54.663+0000",
+                "level":"WARN",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext",
+                "message":"Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'",
+                "exception":""}{"timestamp":"2024-12-18T00:04:54.664+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.coyote.http11.Http11NioProtocol",
+                "message":"Pausing ProtocolHandler ["http-nio-8081"]",
+                "exception":""}{"timestamp":"2024-12-18T00:04:54.664+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.catalina.core.StandardService",
+                "message":"Stopping service [Tomcat]",
+                "exception":""}{"timestamp":"2024-12-18T00:04:54.667+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.coyote.http11.Http11NioProtocol",
+                "message":"Stopping ProtocolHandler ["http-nio-8081"]",
+                "exception":""}{"timestamp":"2024-12-18T00:04:54.667+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.coyote.http11.Http11NioProtocol",
+                "message":"Destroying ProtocolHandler ["http-nio-8081"]",
+                "exception":""}{"timestamp":"2024-12-18T00:04:54.667+0000",
+                "level":"WARN",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext",
+                "message":"Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'",
+                "exception":""}{"timestamp":"2024-12-18T00:04:54.672+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.coyote.http11.Http11NioProtocol",
+                "message":"Pausing ProtocolHandler ["http-nio-8080"]",
+                "exception":""}{"timestamp":"2024-12-18T00:04:54.672+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.catalina.core.StandardService",
+                "message":"Stopping service [Tomcat]",
+                "exception":""}{"timestamp":"2024-12-18T00:04:54.672+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.coyote.http11.Http11NioProtocol",
+                "message":"Stopping ProtocolHandler ["http-nio-8080"]",
+                "exception":""}{"timestamp":"2024-12-18T00:04:54.673+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.coyote.http11.Http11NioProtocol",
+                "message":"Destroying ProtocolHandler ["http-nio-8080"]",
+                "exception":""}{"timestamp":"2024-12-18T00:04:54.679+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.s.b.a.l.ConditionEvaluationReportLogger",
+                "message":"
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.",
+                "exception":""}{"timestamp":"2024-12-18T00:04:54.687+0000",
+                "level":"ERROR",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.s.b.d.LoggingFailureAnalysisReporter",
+                "message":"
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+",
+                "exception":""}{"timestamp":"2024-12-18T00:06:07.618+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"org.example.Rest.RestApplication",
+                "message":"Starting RestApplication using Java 23.0.1 with PID 28608 (/Users/guilhermemelo/IdeaProjects/Wit_Sem_Erros/Rest/target/classes started by guilhermemelo in /Users/guilhermemelo/IdeaProjects/Wit_Sem_Erros)",
+                "exception":""}{"timestamp":"2024-12-18T00:06:07.619+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"org.example.Rest.RestApplication",
+                "message":"No active profile set, falling back to 1 default profile: "default"",
+                "exception":""}{"timestamp":"2024-12-18T00:06:08.125+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.s.b.w.e.tomcat.TomcatWebServer",
+                "message":"Tomcat initialized with port(s): 8080 (http)",
+                "exception":""}{"timestamp":"2024-12-18T00:06:08.130+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.coyote.http11.Http11NioProtocol",
+                "message":"Initializing ProtocolHandler ["http-nio-8080"]",
+                "exception":""}{"timestamp":"2024-12-18T00:06:08.130+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.catalina.core.StandardService",
+                "message":"Starting service [Tomcat]",
+                "exception":""}{"timestamp":"2024-12-18T00:06:08.130+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.catalina.core.StandardEngine",
+                "message":"Starting Servlet engine: [Apache Tomcat/10.1.1]",
+                "exception":""}{"timestamp":"2024-12-18T00:06:08.166+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.c.c.C.[Tomcat].[localhost].[/]",
+                "message":"Initializing Spring embedded WebApplicationContext",
+                "exception":""}{"timestamp":"2024-12-18T00:06:08.168+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.s.b.w.s.c.ServletWebServerApplicationContext",
+                "message":"Root WebApplicationContext: initialization completed in 526 ms",
+                "exception":""}{"timestamp":"2024-12-18T00:06:08.267+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.e.R.C.CalculatorController",
+                "message":"CalculatorController initialized!",
+                "exception":""}{"timestamp":"2024-12-18T00:06:08.555+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.coyote.http11.Http11NioProtocol",
+                "message":"Starting ProtocolHandler ["http-nio-8080"]",
+                "exception":""}{"timestamp":"2024-12-18T00:06:08.562+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.s.b.w.e.tomcat.TomcatWebServer",
+                "message":"Tomcat started on port(s): 8080 (http) with context path ''",
+                "exception":""}{"timestamp":"2024-12-18T00:06:08.592+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.s.b.w.e.tomcat.TomcatWebServer",
+                "message":"Tomcat initialized with port(s): 8082 (http)",
+                "exception":""}{"timestamp":"2024-12-18T00:06:08.592+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.coyote.http11.Http11NioProtocol",
+                "message":"Initializing ProtocolHandler ["http-nio-8082"]",
+                "exception":""}{"timestamp":"2024-12-18T00:06:08.592+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.catalina.core.StandardService",
+                "message":"Starting service [Tomcat]",
+                "exception":""}{"timestamp":"2024-12-18T00:06:08.593+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.catalina.core.StandardEngine",
+                "message":"Starting Servlet engine: [Apache Tomcat/10.1.1]",
+                "exception":""}{"timestamp":"2024-12-18T00:06:08.598+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.c.c.C.[Tomcat-1].[localhost].[/]",
+                "message":"Initializing Spring embedded WebApplicationContext",
+                "exception":""}{"timestamp":"2024-12-18T00:06:08.598+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.s.b.w.s.c.ServletWebServerApplicationContext",
+                "message":"Root WebApplicationContext: initialization completed in 34 ms",
+                "exception":""}{"timestamp":"2024-12-18T00:06:08.604+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.s.b.a.e.web.EndpointLinksResolver",
+                "message":"Exposing 14 endpoint(s) beneath base path '/actuator'",
+                "exception":""}{"timestamp":"2024-12-18T00:06:08.619+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.coyote.http11.Http11NioProtocol",
+                "message":"Starting ProtocolHandler ["http-nio-8082"]",
+                "exception":""}{"timestamp":"2024-12-18T00:06:08.619+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.s.b.w.e.tomcat.TomcatWebServer",
+                "message":"Tomcat started on port(s): 8082 (http) with context path ''",
+                "exception":""}{"timestamp":"2024-12-18T00:06:08.637+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.k.c.consumer.ConsumerConfig",
+                "message":"ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [kafka:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-rest-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = rest-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+",
+                "exception":""}{"timestamp":"2024-12-18T00:06:08.720+0000",
+                "level":"WARN",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.apache.kafka.clients.ClientUtils",
+                "message":"Couldn't resolve server kafka:9092 from bootstrap.servers as DNS resolution failed for kafka",
+                "exception":""}{"timestamp":"2024-12-18T00:06:08.721+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.kafka.common.metrics.Metrics",
+                "message":"Metrics scheduler closed",
+                "exception":""}{"timestamp":"2024-12-18T00:06:08.721+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.kafka.common.metrics.Metrics",
+                "message":"Closing reporter org.apache.kafka.common.metrics.JmxReporter",
+                "exception":""}{"timestamp":"2024-12-18T00:06:08.721+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.kafka.common.metrics.Metrics",
+                "message":"Metrics reporters closed",
+                "exception":""}{"timestamp":"2024-12-18T00:06:08.721+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.kafka.common.utils.AppInfoParser",
+                "message":"App info kafka.consumer for consumer-rest-group-1 unregistered",
+                "exception":""}{"timestamp":"2024-12-18T00:06:08.721+0000",
+                "level":"WARN",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext",
+                "message":"Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'org.springframework.kafka.config.internalKafkaListenerEndpointRegistry'",
+                "exception":""}{"timestamp":"2024-12-18T00:06:08.727+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.coyote.http11.Http11NioProtocol",
+                "message":"Pausing ProtocolHandler ["http-nio-8080"]",
+                "exception":""}{"timestamp":"2024-12-18T00:06:08.727+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.catalina.core.StandardService",
+                "message":"Stopping service [Tomcat]",
+                "exception":""}{"timestamp":"2024-12-18T00:06:08.729+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.coyote.http11.Http11NioProtocol",
+                "message":"Stopping ProtocolHandler ["http-nio-8080"]",
+                "exception":""}{"timestamp":"2024-12-18T00:06:08.730+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.coyote.http11.Http11NioProtocol",
+                "message":"Destroying ProtocolHandler ["http-nio-8080"]",
+                "exception":""}{"timestamp":"2024-12-18T00:06:08.738+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.s.b.a.l.ConditionEvaluationReportLogger",
+                "message":"
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.",
+                "exception":""}{"timestamp":"2024-12-18T00:06:08.747+0000",
+                "level":"ERROR",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.s.boot.SpringApplication",
+                "message":"Application run failed",
+                "exception":"org.springframework.context.ApplicationContextException: Failed to start bean 'org.springframework.kafka.config.internalKafkaListenerEndpointRegistry'\n	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181)\n	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)\n	at java.base/java.lang.Iterable.forEach(Iterable.java:75)\n	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)\n	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)\n	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:932)\n	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:587)\n	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)\n	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)\n	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)\n	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)\n	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)\n	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)\n	at org.example.Rest.RestApplication.main(RestApplication.java:14)\nCaused by: org.apache.kafka.common.KafkaException: Failed to construct kafka consumer\n	at org.apache.kafka.clients.consumer.KafkaConsumer.<init>(KafkaConsumer.java:830)\n	at org.apache.kafka.clients.consumer.KafkaConsumer.<init>(KafkaConsumer.java:666)\n	at org.springframework.kafka.core.DefaultKafkaConsumerFactory.createRawConsumer(DefaultKafkaConsumerFactory.java:483)\n	at org.springframework.kafka.core.DefaultKafkaConsumerFactory.createKafkaConsumer(DefaultKafkaConsumerFactory.java:451)\n	at org.springframework.kafka.core.DefaultKafkaConsumerFactory.createConsumerWithAdjustedProperties(DefaultKafkaConsumerFactory.java:427)\n	at org.springframework.kafka.core.DefaultKafkaConsumerFactory.createKafkaConsumer(DefaultKafkaConsumerFactory.java:394)\n	at org.springframework.kafka.core.DefaultKafkaConsumerFactory.createConsumer(DefaultKafkaConsumerFactory.java:371)\n	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.<init>(KafkaMessageListenerContainer.java:846)\n	at org.springframework.kafka.listener.KafkaMessageListenerContainer.doStart(KafkaMessageListenerContainer.java:379)\n	at org.springframework.kafka.listener.AbstractMessageListenerContainer.start(AbstractMessageListenerContainer.java:483)\n	at org.springframework.kafka.listener.ConcurrentMessageListenerContainer.doStart(ConcurrentMessageListenerContainer.java:226)\n	at org.springframework.kafka.listener.AbstractMessageListenerContainer.start(AbstractMessageListenerContainer.java:483)\n	at org.springframework.kafka.config.KafkaListenerEndpointRegistry.startIfNecessary(KafkaListenerEndpointRegistry.java:383)\n	at org.springframework.kafka.config.KafkaListenerEndpointRegistry.start(KafkaListenerEndpointRegistry.java:328)\n	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)\n	... 13 common frames omitted\nCaused by: org.apache.kafka.common.config.ConfigException: No resolvable bootstrap urls given in bootstrap.servers\n	at org.apache.kafka.clients.ClientUtils.parseAndValidateAddresses(ClientUtils.java:89)\n	at org.apache.kafka.clients.ClientUtils.parseAndValidateAddresses(ClientUtils.java:48)\n	at org.apache.kafka.clients.consumer.KafkaConsumer.<init>(KafkaConsumer.java:732)\n	... 27 common frames omitted\n"}{"timestamp":"2024-12-18T00:14:04.996+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"org.example.Rest.RestApplication",
+                "message":"Starting RestApplication using Java 23.0.1 with PID 28764 (/Users/guilhermemelo/IdeaProjects/Wit_Sem_Erros/Rest/target/classes started by guilhermemelo in /Users/guilhermemelo/IdeaProjects/Wit_Sem_Erros)",
+                "exception":""}{"timestamp":"2024-12-18T00:14:04.996+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"org.example.Rest.RestApplication",
+                "message":"No active profile set, falling back to 1 default profile: "default"",
+                "exception":""}{"timestamp":"2024-12-18T00:14:05.554+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.s.b.w.e.tomcat.TomcatWebServer",
+                "message":"Tomcat initialized with port(s): 8080 (http)",
+                "exception":""}{"timestamp":"2024-12-18T00:14:05.560+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.coyote.http11.Http11NioProtocol",
+                "message":"Initializing ProtocolHandler ["http-nio-8080"]",
+                "exception":""}{"timestamp":"2024-12-18T00:14:05.561+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.catalina.core.StandardService",
+                "message":"Starting service [Tomcat]",
+                "exception":""}{"timestamp":"2024-12-18T00:14:05.561+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.catalina.core.StandardEngine",
+                "message":"Starting Servlet engine: [Apache Tomcat/10.1.1]",
+                "exception":""}{"timestamp":"2024-12-18T00:14:05.622+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.c.c.C.[Tomcat].[localhost].[/]",
+                "message":"Initializing Spring embedded WebApplicationContext",
+                "exception":""}{"timestamp":"2024-12-18T00:14:05.623+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.s.b.w.s.c.ServletWebServerApplicationContext",
+                "message":"Root WebApplicationContext: initialization completed in 597 ms",
+                "exception":""}{"timestamp":"2024-12-18T00:14:05.718+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.e.R.C.CalculatorController",
+                "message":"CalculatorController initialized!",
+                "exception":""}{"timestamp":"2024-12-18T00:14:06.077+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.coyote.http11.Http11NioProtocol",
+                "message":"Starting ProtocolHandler ["http-nio-8080"]",
+                "exception":""}{"timestamp":"2024-12-18T00:14:06.083+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.s.b.w.e.tomcat.TomcatWebServer",
+                "message":"Tomcat started on port(s): 8080 (http) with context path ''",
+                "exception":""}{"timestamp":"2024-12-18T00:14:06.104+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.s.b.w.e.tomcat.TomcatWebServer",
+                "message":"Tomcat initialized with port(s): 8082 (http)",
+                "exception":""}{"timestamp":"2024-12-18T00:14:06.105+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.coyote.http11.Http11NioProtocol",
+                "message":"Initializing ProtocolHandler ["http-nio-8082"]",
+                "exception":""}{"timestamp":"2024-12-18T00:14:06.105+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.catalina.core.StandardService",
+                "message":"Starting service [Tomcat]",
+                "exception":""}{"timestamp":"2024-12-18T00:14:06.105+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.catalina.core.StandardEngine",
+                "message":"Starting Servlet engine: [Apache Tomcat/10.1.1]",
+                "exception":""}{"timestamp":"2024-12-18T00:14:06.110+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.c.c.C.[Tomcat-1].[localhost].[/]",
+                "message":"Initializing Spring embedded WebApplicationContext",
+                "exception":""}{"timestamp":"2024-12-18T00:14:06.110+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.s.b.w.s.c.ServletWebServerApplicationContext",
+                "message":"Root WebApplicationContext: initialization completed in 26 ms",
+                "exception":""}{"timestamp":"2024-12-18T00:14:06.115+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.s.b.a.e.web.EndpointLinksResolver",
+                "message":"Exposing 14 endpoint(s) beneath base path '/actuator'",
+                "exception":""}{"timestamp":"2024-12-18T00:14:06.128+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.coyote.http11.Http11NioProtocol",
+                "message":"Starting ProtocolHandler ["http-nio-8082"]",
+                "exception":""}{"timestamp":"2024-12-18T00:14:06.129+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.s.b.w.e.tomcat.TomcatWebServer",
+                "message":"Tomcat started on port(s): 8082 (http) with context path ''",
+                "exception":""}{"timestamp":"2024-12-18T00:14:06.149+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.k.c.consumer.ConsumerConfig",
+                "message":"ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [kafka:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-rest-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = rest-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+",
+                "exception":""}{"timestamp":"2024-12-18T00:14:06.220+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.kafka.common.utils.AppInfoParser",
+                "message":"Kafka version: 3.3.1",
+                "exception":""}{"timestamp":"2024-12-18T00:14:06.220+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.kafka.common.utils.AppInfoParser",
+                "message":"Kafka commitId: e23c59d00e687ff5",
+                "exception":""}{"timestamp":"2024-12-18T00:14:06.220+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.kafka.common.utils.AppInfoParser",
+                "message":"Kafka startTimeMs: 1734480846220",
+                "exception":""}{"timestamp":"2024-12-18T00:14:06.231+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.k.clients.consumer.KafkaConsumer",
+                "message":"[Consumer clientId=consumer-rest-group-1, groupId=rest-group] Subscribed to topic(s): calculator-responses",
+                "exception":""}{"timestamp":"2024-12-18T00:14:06.239+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"org.example.Rest.RestApplication",
+                "message":"Started RestApplication in 1.484 seconds (process running for 1.755)",
+                "exception":""}{"timestamp":"2024-12-18T00:14:06.241+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"org.example.Rest.RestApplication",
+                "message":"Application started successfully",
+                "exception":""}{"timestamp":"2024-12-18T00:14:06.354+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"org.apache.kafka.clients.Metadata",
+                "message":"[Consumer clientId=consumer-rest-group-1, groupId=rest-group] Resetting the last seen epoch of partition calculator-responses-0 to 0 since the associated topicId changed from null to FE7LCZd2TfaKegI2QNFLsw",
+                "exception":""}{"timestamp":"2024-12-18T00:14:06.355+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"org.apache.kafka.clients.Metadata",
+                "message":"[Consumer clientId=consumer-rest-group-1, groupId=rest-group] Cluster ID: uZuQpMdVQk2gDcFPa0LGVA",
+                "exception":""}{"timestamp":"2024-12-18T00:14:06.355+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.k.c.c.i.ConsumerCoordinator",
+                "message":"[Consumer clientId=consumer-rest-group-1, groupId=rest-group] Discovered group coordinator kafka:9092 (id: 2147482646 rack: null)",
+                "exception":""}{"timestamp":"2024-12-18T00:14:06.357+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.k.c.c.i.ConsumerCoordinator",
+                "message":"[Consumer clientId=consumer-rest-group-1, groupId=rest-group] (Re-)joining group",
+                "exception":""}{"timestamp":"2024-12-18T00:14:06.365+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.k.c.c.i.ConsumerCoordinator",
+                "message":"[Consumer clientId=consumer-rest-group-1, groupId=rest-group] Request joining group due to: need to re-join with the given member-id: consumer-rest-group-1-e6bd4c56-1e68-463a-aa66-ffbd957995bf",
+                "exception":""}{"timestamp":"2024-12-18T00:14:06.366+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.k.c.c.i.ConsumerCoordinator",
+                "message":"[Consumer clientId=consumer-rest-group-1, groupId=rest-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)",
+                "exception":""}{"timestamp":"2024-12-18T00:14:06.366+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.k.c.c.i.ConsumerCoordinator",
+                "message":"[Consumer clientId=consumer-rest-group-1, groupId=rest-group] (Re-)joining group",
+                "exception":""}{"timestamp":"2024-12-18T00:14:07.465+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.k.c.c.i.ConsumerCoordinator",
+                "message":"[Consumer clientId=consumer-rest-group-1, groupId=rest-group] Successfully joined group with generation Generation{generationId=3, memberId='consumer-rest-group-1-e6bd4c56-1e68-463a-aa66-ffbd957995bf', protocol='range'}",
+                "exception":""}{"timestamp":"2024-12-18T00:14:07.494+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.k.c.c.i.ConsumerCoordinator",
+                "message":"[Consumer clientId=consumer-rest-group-1, groupId=rest-group] Successfully synced group in generation Generation{generationId=3, memberId='consumer-rest-group-1-e6bd4c56-1e68-463a-aa66-ffbd957995bf', protocol='range'}",
+                "exception":""}{"timestamp":"2024-12-18T00:14:07.500+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.k.c.c.i.ConsumerCoordinator",
+                "message":"[Consumer clientId=consumer-rest-group-1, groupId=rest-group] Notifying assignor about the new Assignment(partitions=[calculator-responses-0])",
+                "exception":""}{"timestamp":"2024-12-18T00:14:07.508+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.k.c.c.i.ConsumerCoordinator",
+                "message":"[Consumer clientId=consumer-rest-group-1, groupId=rest-group] Adding newly assigned partitions: calculator-responses-0",
+                "exception":""}{"timestamp":"2024-12-18T00:14:07.573+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.k.c.c.i.ConsumerCoordinator",
+                "message":"[Consumer clientId=consumer-rest-group-1, groupId=rest-group] Setting offset for partition calculator-responses-0 to the committed offset FetchPosition{offset=2, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}",
+                "exception":""}{"timestamp":"2024-12-18T00:14:07.676+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.s.k.l.KafkaMessageListenerContainer",
+                "message":"rest-group: partitions assigned: [calculator-responses-0]",
+                "exception":""}{"timestamp":"2024-12-18T00:14:56.518+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.c.c.C.[Tomcat-1].[localhost].[/]",
+                "message":"Initializing Spring DispatcherServlet 'dispatcherServlet'",
+                "exception":""}{"timestamp":"2024-12-18T00:14:56.519+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.s.web.servlet.DispatcherServlet",
+                "message":"Initializing Servlet 'dispatcherServlet'",
+                "exception":""}{"timestamp":"2024-12-18T00:14:56.520+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.s.web.servlet.DispatcherServlet",
+                "message":"Completed initialization in 1 ms",
+                "exception":""}{"timestamp":"2024-12-18T00:16:58.809+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.c.c.C.[Tomcat].[localhost].[/]",
+                "message":"Initializing Spring DispatcherServlet 'dispatcherServlet'",
+                "exception":""}{"timestamp":"2024-12-18T00:16:58.813+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.s.web.servlet.DispatcherServlet",
+                "message":"Initializing Servlet 'dispatcherServlet'",
+                "exception":""}{"timestamp":"2024-12-18T00:16:58.820+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.s.web.servlet.DispatcherServlet",
+                "message":"Completed initialization in 7 ms",
+                "exception":""}{"timestamp":"2024-12-18T00:21:46.336+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.k.c.c.i.ConsumerCoordinator",
+                "message":"[Consumer clientId=consumer-rest-group-1, groupId=rest-group] Revoke previously assigned partitions calculator-responses-0",
+                "exception":""}{"timestamp":"2024-12-18T00:21:46.339+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.s.k.l.KafkaMessageListenerContainer",
+                "message":"rest-group: partitions revoked: [calculator-responses-0]",
+                "exception":""}{"timestamp":"2024-12-18T00:21:46.339+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.k.c.c.i.ConsumerCoordinator",
+                "message":"[Consumer clientId=consumer-rest-group-1, groupId=rest-group] Member consumer-rest-group-1-e6bd4c56-1e68-463a-aa66-ffbd957995bf sending LeaveGroup request to coordinator kafka:9092 (id: 2147482646 rack: null) due to the consumer unsubscribed from all topics",
+                "exception":""}{"timestamp":"2024-12-18T00:21:46.340+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.k.c.c.i.ConsumerCoordinator",
+                "message":"[Consumer clientId=consumer-rest-group-1, groupId=rest-group] Resetting generation and member id due to: consumer pro-actively leaving the group",
+                "exception":""}{"timestamp":"2024-12-18T00:21:46.340+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.k.c.c.i.ConsumerCoordinator",
+                "message":"[Consumer clientId=consumer-rest-group-1, groupId=rest-group] Request joining group due to: consumer pro-actively leaving the group",
+                "exception":""}{"timestamp":"2024-12-18T00:21:46.340+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.k.clients.consumer.KafkaConsumer",
+                "message":"[Consumer clientId=consumer-rest-group-1, groupId=rest-group] Unsubscribed all topics or patterns and assigned partitions",
+                "exception":""}{"timestamp":"2024-12-18T00:21:46.346+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.k.c.c.i.ConsumerCoordinator",
+                "message":"[Consumer clientId=consumer-rest-group-1, groupId=rest-group] Resetting generation and member id due to: consumer pro-actively leaving the group",
+                "exception":""}{"timestamp":"2024-12-18T00:21:46.346+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.k.c.c.i.ConsumerCoordinator",
+                "message":"[Consumer clientId=consumer-rest-group-1, groupId=rest-group] Request joining group due to: consumer pro-actively leaving the group",
+                "exception":""}{"timestamp":"2024-12-18T00:21:46.411+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.kafka.common.metrics.Metrics",
+                "message":"Metrics scheduler closed",
+                "exception":""}{"timestamp":"2024-12-18T00:21:46.411+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.kafka.common.metrics.Metrics",
+                "message":"Closing reporter org.apache.kafka.common.metrics.JmxReporter",
+                "exception":""}{"timestamp":"2024-12-18T00:21:46.411+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.kafka.common.metrics.Metrics",
+                "message":"Metrics reporters closed",
+                "exception":""}{"timestamp":"2024-12-18T00:21:46.421+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.a.kafka.common.utils.AppInfoParser",
+                "message":"App info kafka.consumer for consumer-rest-group-1 unregistered",
+                "exception":""}{"timestamp":"2024-12-18T00:21:46.422+0000",
+                "level":"INFO",
+                "App_name":"REST-APP",
+                "request_id":"",
+                "logger":"o.s.k.l.KafkaMessageListenerContainer",
+                "message":"rest-group: Consumer stopped",
+                "exception":""}

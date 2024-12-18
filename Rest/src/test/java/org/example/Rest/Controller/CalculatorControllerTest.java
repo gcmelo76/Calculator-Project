@@ -32,31 +32,21 @@ class CalculatorControllerTest {
 
     @Test
     void calculate_ShouldSendMessageToKafka() {
-        // Arrange
         BigDecimal a = new BigDecimal("10");
         BigDecimal b = new BigDecimal("5");
 
-        // Act
         calculatorController.calculate("add", a, b);
-
-        // Assert
         verify(kafkaProducer).sendMessage(any(), eq("add"), eq(a), eq(b));
     }
 
     @Test
     void consumeResponse_ShouldCompleteResponseFuture() {
-        // Arrange
         String requestId = "add-123";
         String message = requestId + " 15.0";
 
-        // Create a pending future
         CompletableFuture<BigDecimal> future = new CompletableFuture<>();
         calculatorController.completeResponse(requestId, new BigDecimal("15.0"));
-
-        // Act
         calculatorController.consumeResponse(message);
-
-        // Assert
         assertFalse(future.isCompletedExceptionally());
     }
 }

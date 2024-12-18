@@ -29,17 +29,13 @@ class KafkaProducerTest {
 
     @Test
     void sendMessage_ShouldSendFormattedMessageToKafka() {
-        // Arrange
         String requestId = "123";
         String operation = "ADD";
         BigDecimal a = new BigDecimal("10");
         BigDecimal b = new BigDecimal("5");
         String expectedMessage = "123 ADD 10 5";
 
-        // Act
         kafkaProducer.sendMessage(requestId, operation, a, b);
-
-        // Assert
         verify(kafkaTemplate).send(eq("test-topic"), eq(expectedMessage));
     }
 }

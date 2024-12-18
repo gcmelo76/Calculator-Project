@@ -8,13 +8,10 @@ class OpenAPIConfigTest {
 
     @Test
     void baseOpenAPI_ShouldReturnCorrectConfiguration() {
-        // Arrange
         OpenAPIConfig config = new OpenAPIConfig();
 
-        // Act
         OpenAPI openAPI = config.baseOpenAPI();
 
-        // Assert
         assertNotNull(openAPI.getInfo());
         assertEquals("Calculator API", openAPI.getInfo().getTitle());
         assertEquals("1.0", openAPI.getInfo().getVersion());

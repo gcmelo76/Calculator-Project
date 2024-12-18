@@ -20,14 +20,10 @@ class CalculatorServiceTest {
     @Test
     @DisplayName("Soma dois números positivos")
     void add_WithPositiveNumbers_ShouldReturnSum() {
-        // Arrange
         BigDecimal a = new BigDecimal("10");
         BigDecimal b = new BigDecimal("5");
 
-        // Act
         BigDecimal result = calculatorService.add(a, b);
-
-        // Assert
         assertEquals(new BigDecimal("15"), result);
     }
 
